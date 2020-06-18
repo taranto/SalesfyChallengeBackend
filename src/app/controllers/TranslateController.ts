@@ -6,7 +6,7 @@ class TranslateController {
     res: express.Response
   ): Promise<void | any> {
     try {
-      return res.json({ result: "one" });
+      return res.status(200).json({ result: "one" });
     } catch (err) {
       return res.json(err);
     }
