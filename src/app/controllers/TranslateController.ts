@@ -1,7 +1,15 @@
-import { Request, Response } from "express";
+import * as express from "express";
 
-module.exports = {
-  async index(req: Request, res: Response) {
-    return res.json({ msg: "ok!" });
-  },
-};
+class TranslateController {
+  async index(
+    req: express.Request,
+    res: express.Response
+  ): Promise<void | any> {
+    try {
+      return res.json({ result: "one" });
+    } catch (err) {
+      return res.json(err);
+    }
+  }
+}
+export default new TranslateController();
