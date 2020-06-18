@@ -1,12 +1,11 @@
 import * as express from "express";
 const routes = require("./routes");
+import "./bootstrap";
 
 const server = express();
 server.use(routes);
 server.use(express.json());
-server.listen(3333, (err) => {
-  if (err) {
-    return console.error(err);
-  }
-  return console.log(`Salesfy Challenge Backend is listening on 3333`);
-});
+server.listen(process.env.NODE_PORT, () =>
+  console.log(`Example app listening on port ${process.env.NODE_PORT}!`)
+);
+module.exports = server;
