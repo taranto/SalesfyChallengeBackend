@@ -1,15 +1,11 @@
 import * as express from "express";
 
 class TranslateController {
-  async index(
+  public async index(
     req: express.Request,
     res: express.Response
-  ): Promise<void | any> {
-    try {
-      return res.status(200).json({ result: "one" });
-    } catch (err) {
-      return res.json(err);
-    }
+  ): Promise<express.Response> {
+    return res.json({ msg: "OK!" });
   }
 }
 export default new TranslateController();
