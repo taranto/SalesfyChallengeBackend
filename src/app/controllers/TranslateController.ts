@@ -5,7 +5,10 @@ class TranslateController {
     req: express.Request,
     res: express.Response
   ): Promise<express.Response> {
-    return res.json({ msg: "OK!" });
+    if (Number(req.query.translate) === 1) {
+      return res.send("one");
+    }
+    return res.send("not implemented yet");
   }
 }
 export default new TranslateController();

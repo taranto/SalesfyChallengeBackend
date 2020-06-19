@@ -4,15 +4,14 @@ import chaiHttp = require("chai-http");
 import "mocha";
 
 chai.use(chaiHttp);
-const expect = chai.expect;
 
 describe("Hello API Request", () => {
   it("should return response on call", () => {
     return chai
       .request(app)
-      .get("/")
+      .get("?translate=1")
       .then((res) => {
-        chai.expect(res.text).to.eql("Hello World");
+        chai.expect(res.text).to.eql("one");
       });
   });
 });
