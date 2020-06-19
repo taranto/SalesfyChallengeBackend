@@ -16,3 +16,11 @@
   </a>
 
 </p>
+
+## ℹ️  Informações
+
+Este é um desafio que faz pate do recrutamento da Salesfy. O projeto já está finalizado e funcional.
+
+## 💻 Projeto
+
+O projeto transforma números de forma numérica para sua respectiva representação textual em inglês através de uma API REST, onde se utiliza requisições e respostas HTTP.
