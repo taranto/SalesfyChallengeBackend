@@ -14,7 +14,7 @@
   <a href="https://github.com/KZTN/SalesfyChallengeBackend/issues">
     <img alt="Repository issues" src="https://img.shields.io/github/issues/KZTN/SalesfyChallengeBackend.svg">
   </a>
-
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
 </p>
 
 ## ℹ️  Informações
@@ -73,3 +73,8 @@ yarn start
 ```
 
 Visite http://localhost:3333?translate=123456 (ou qualquer outra entrada) com o seu navegador para ver o resultado. 🎉
+
+## :memo: Licença
+
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
+
