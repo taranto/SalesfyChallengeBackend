@@ -70,4 +70,13 @@ describe("Hello API Request", () => {
         chai.expect(res.status).to.eql(400);
       });
   });
+  it("should return bad request when I entry with number with float", () => {
+    return chai
+      .request(app)
+      .get(`?translate=${Math.random() * 1000000000000 + Math.random()}`)
+      .then((res) => {
+        chai.expect(res.text).to.eql("Entries must be integer");
+        chai.expect(res.status).to.eql(400);
+      });
+  });
 });

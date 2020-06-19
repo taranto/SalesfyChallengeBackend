@@ -14,6 +14,9 @@ class TranslateController {
     if (Number(req.query.translate) < 0) {
       return res.status(400).send("Entries must be positive");
     }
+    if (Number(req.query.translate) % 1 !== 0) {
+      return res.status(400).send("Entries must be integer");
+    }
     return res.send(translateNumber(Number(req.query.translate)));
   }
 }
