@@ -1,14 +1,18 @@
-Este é o projeto de desafio Salesfy, etapa Backend.
+<h1 align="center">SalesfyChallengeBackend</h1>
+<h4 align="center">
+  API de Tradução de números em sua representação textual
+</h4>
+<p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/KZTN/SalesfyChallengeBackend.svg">
 
-Para instalação, rodar o comando:
-$ npm install
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/KZTN/SalesfyChallengeBackend.svg">
+  
+  <a href="https://github.com/KZTN/SalesfyChallengeBackend/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/KZTN/SalesfyChallengeBackend.svg">
+  </a>
 
-Para rodar corretamente com maior produtividade para desenvolvimento, rode em terminais diferentes os seguintes comandos:
+  <a href="https://github.com/KZTN/SalesfyChallengeBackend/issues">
+    <img alt="Repository issues" src="https://img.shields.io/github/issues/KZTN/SalesfyChallengeBackend.svg">
+  </a>
 
-$ sudo yarn compile-watch
--- Este comando é responsável por manter seu typescript sendo compilado a cada save. Você pode acompanhar neste terminal qualquer erro de escrita no seu programa.
-
-$ sudo yarn nodemon
--- A cada compilação bem sucedida, o Backend lança novamente e automaticamente uma nova versão no ar. Mantendo a execução sempre com a versão mais atualizada do código.
-
-Caso esteja usando vsCode, é recomendado o uso da execução com debug, o que pode ser alcançado via arquivo launch.json. Em posse do arquivo, execute no vsCode o botão F5.
+</p>
