@@ -72,4 +72,4 @@ Rodando o projeto:
 yarn start
 ```
 
-Visite http://localhost:3000?translate=123456 (ou qualquer outra entrada) com o seu navegador para ver o resultado. 🎉
+Visite http://localhost:3333?translate=123456 (ou qualquer outra entrada) com o seu navegador para ver o resultado. 🎉
