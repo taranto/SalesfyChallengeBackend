@@ -2,10 +2,11 @@
   "name": "salesfy-challenge-backend",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "js/app.js",
   "scripts": {
     "start": "NODE_ENV=production tsc && node js/server.js",
-    "test": "NODE_ENV=test mocha",
+    "test": "NODE_ENV=test mocha --require ts-node/register --paths -p test/**.test.ts",
     "start:watch": "nodemon js/app.js",
     "compile-watch": "sudo yarn tsc --p tsconfig.json -w"
   },
@@ -14,16 +15,20 @@
   "license": "ISC",
   "devDependencies": {
     "@types/chai": "^4.2.11",
+    "@types/chai-http": "^4.2.0",
+    "@types/expect": "^24.3.0",
     "@types/express": "^4.17.2",
     "@types/mocha": "^7.0.2",
     "@types/supertest": "^2.0.9",
     "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "dotenv": "^8.2.0",
     "mocha": "^8.0.1",
     "nodemon": "^2.0.1",
     "supertest": "^4.0.2",
+    "ts-mocha": "^7.0.0",
     "tslint": "^5.20.1",
-    "typescript": "^3.7.2",
-    "dotenv": "^8.2.0"
+    "typescript": "^3.7.2"
   },
   "dependencies": {
     "express": "^4.17.1"
