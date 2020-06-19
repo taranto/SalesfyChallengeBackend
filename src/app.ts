@@ -12,7 +12,6 @@ class App {
     this.routes();
   }
   private middlewares(): void {
-    this.app.use(express.json());
     this.app.use(morgan("dev"));
   }
   private routes(): void {
