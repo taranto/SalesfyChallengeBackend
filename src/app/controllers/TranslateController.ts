@@ -8,7 +8,7 @@ class TranslateController {
     if (Number(req.query.translate) === 1) {
       return res.send("one");
     }
-    return res.send("not implemented yet");
+    return res.status(400).send("not implemented yet");
   }
 }
 export default new TranslateController();
