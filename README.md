@@ -19,7 +19,7 @@
 
 ## ℹ️  Informações
 
-Este é um desafio que faz pate do recrutamento da Salesfy. O projeto já está finalizado e funcional.
+Este é um desafio que faz parte do recrutamento da Salesfy. O projeto já está finalizado e funcional.
 
 ## 💻 Projeto
 
@@ -31,4 +31,45 @@ Todas chamadas devem usar a url com a query exemplo abaixo:
 ```
 http://localhost:3333?translate=123456
 ```
-O resultado então será mostrado na tela do usuário
+O resultado então será mostrado na tela do usuário.
+
+## Começando...
+Essas instruções fornecerão uma cópia do projeto em execução na sua máquina local para fins de desenvolvimento e teste.
+
+### Pré-requisitos
+O que você precisa para instalar o software:
+
+```
+node v12.x
+yarn 1.22.4
+git
+```
+> Para uma melhor experiência no ambiente de testes com o servidor API REST, recomenda-se o uso do [insomnia](https://insomnia.rest/)
+
+### Instalando o projeto 🚀
+Clonando o projeto:
+
+```
+git clone https://github.com/KZTN/SalesfyChallengeBackend.git
+```
+
+Navegando até a pasta do projeto:
+
+```
+cd SalesfyChallengeBackend
+```
+
+
+Baixando as dependências do projeto:
+
+```bash
+yarn install
+```
+
+Rodando o projeto:
+
+```bash
+yarn start
+```
+
+Visite http://localhost:3000?translate=123456 (ou qualquer outra entrada) com o seu navegador para ver o resultado. 🎉
