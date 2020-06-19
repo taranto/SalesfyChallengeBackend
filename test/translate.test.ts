@@ -15,7 +15,7 @@ function makeid(length: Number) {
   return result;
 }
 
-describe("Hello API Request", () => {
+describe("Testing mainly funcionalities of the API", () => {
   it("should return success response on call", () => {
     return chai
       .request(app)
@@ -37,9 +37,13 @@ describe("Hello API Request", () => {
   it("should return success response on call", () => {
     return chai
       .request(app)
-      .get("?translate=154")
+      .get("?translate=159753456258")
       .then((res) => {
-        chai.expect(res.text).to.eql("one hundred fifty four");
+        chai
+          .expect(res.text)
+          .to.eql(
+            "one hundred fifty nine billion seven hundred fifty three million four hundred fifty six thousand two hundred fifty eight"
+          );
         chai.expect(res.status).to.eql(200);
       });
   });
@@ -61,7 +65,7 @@ describe("Hello API Request", () => {
         chai.expect(res.status).to.eql(400);
       });
   });
-  it("should return bad request when I entry with number larger than 1 tillion", () => {
+  it("should return bad request when I entry with a negative number", () => {
     return chai
       .request(app)
       .get(`?translate=${Math.floor(Math.random() * -1000000000000)}`)
