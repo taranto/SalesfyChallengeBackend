@@ -24,3 +24,11 @@ Este é um desafio que faz pate do recrutamento da Salesfy. O projeto já está 
 ## 💻 Projeto
 
 O projeto transforma números de forma numérica para sua respectiva representação textual em inglês através de uma API REST, onde se utiliza requisições e respostas HTTP.
+
+## 🔌 Base url 
+
+Todas chamadas devem usar a url com a query exemplo abaixo:
+```
+http://localhost:3333?translate=123456
+```
+O resultado então será mostrado na tela do usuário
