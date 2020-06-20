@@ -1,7 +1,7 @@
 import * as express from "express";
 import * as morgan from "morgan";
+import * as cors from "cors";
 import routes from "./routes";
-
 import "./bootstrap";
 
 class App {
@@ -12,6 +12,7 @@ class App {
     this.routes();
   }
   private middlewares(): void {
+    this.app.use(cors());
     this.app.use(morgan("dev"));
   }
   private routes(): void {
