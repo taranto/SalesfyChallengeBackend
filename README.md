@@ -1,14 +1,80 @@
-Este é o projeto de desafio Salesfy, etapa Backend.
+<h1 align="center">SalesfyChallengeBackend</h1>
+<h4 align="center">
+  API de Tradução de números em sua representação textual
+</h4>
+<p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/KZTN/SalesfyChallengeBackend.svg">
 
-Para instalação, rodar o comando:
-$ npm install
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/KZTN/SalesfyChallengeBackend.svg">
+  
+  <a href="https://github.com/KZTN/SalesfyChallengeBackend/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/KZTN/SalesfyChallengeBackend.svg">
+  </a>
 
-Para rodar corretamente com maior produtividade para desenvolvimento, rode em terminais diferentes os seguintes comandos:
+  <a href="https://github.com/KZTN/SalesfyChallengeBackend/issues">
+    <img alt="Repository issues" src="https://img.shields.io/github/issues/KZTN/SalesfyChallengeBackend.svg">
+  </a>
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
+</p>
 
-$ sudo yarn compile-watch
--- Este comando é responsável por manter seu typescript sendo compilado a cada save. Você pode acompanhar neste terminal qualquer erro de escrita no seu programa.
+## ℹ️  Informações
 
-$ sudo yarn nodemon
--- A cada compilação bem sucedida, o Backend lança novamente e automaticamente uma nova versão no ar. Mantendo a execução sempre com a versão mais atualizada do código.
+Este é um desafio que faz parte do recrutamento da Salesfy. O projeto já está finalizado e funcional.
 
-Caso esteja usando vsCode, é recomendado o uso da execução com debug, o que pode ser alcançado via arquivo launch.json. Em posse do arquivo, execute no vsCode o botão F5.
+## 💻 Projeto
+
+O projeto transforma números de forma numérica para sua respectiva representação textual em inglês através de uma API REST, onde se utiliza requisições e respostas HTTP.
+
+## 🔌 Base url 
+
+Todas chamadas devem usar a url com a query exemplo abaixo:
+```
+http://localhost:3333?translate=123456
+```
+O resultado então será mostrado na tela do usuário.
+
+## Começando...
+Essas instruções fornecerão uma cópia do projeto em execução na sua máquina local para fins de desenvolvimento e teste.
+
+### Pré-requisitos
+O que você precisa para instalar o software:
+
+```
+node v12.x
+yarn 1.22.4
+git
+```
+> Para uma melhor experiência no ambiente de testes com o servidor API REST, recomenda-se o uso do [insomnia](https://insomnia.rest/)
+
+### Instalando o projeto 🚀
+Clonando o projeto:
+
+```
+git clone https://github.com/KZTN/SalesfyChallengeBackend.git
+```
+
+Navegando até a pasta do projeto:
+
+```
+cd SalesfyChallengeBackend
+```
+
+
+Baixando as dependências do projeto:
+
+```bash
+yarn install
+```
+
+Rodando o projeto:
+
+```bash
+yarn start
+```
+
+Visite http://localhost:3333?translate=123456 (ou qualquer outra entrada) com o seu navegador para ver o resultado. 🎉
+
+## :memo: Licença
+
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
+
