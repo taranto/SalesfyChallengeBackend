@@ -10,8 +10,8 @@
     "compile-watch": "sudo yarn tsc --p tsconfig.json -w"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "KZTN",
+  "license": "MIT",
   "devDependencies": {
     "@types/chai": "^4.2.11",
     "@types/chai-http": "^4.2.0",
