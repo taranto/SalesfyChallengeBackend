@@ -1,4 +1,10 @@
-Este é o projeto de desafio Salesfy, etapa Backend.
+# Welcome to Salesfy Project
+
+For further explanations about the Salesfy project, please visit [taranto/salesfy-project](https://github.com/taranto/salesfy-project)
+
+
+
+### Este é o projeto de desafio Salesfy, etapa Backend.
 
 Para instalação, rodar o comando:
 $ npm install
